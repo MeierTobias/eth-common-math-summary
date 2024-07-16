@@ -1,6 +1,6 @@
 # ignore vs-code settings
 /.vscode/*
-!.vscode/eth-common-math-summary.code-workspace
+!.vscode/eth-common-math-summary.code-workspace.example
 
 # ignore the latex build
 build/
