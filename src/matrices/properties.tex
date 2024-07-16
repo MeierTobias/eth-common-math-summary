@@ -35,8 +35,35 @@ are hermitian, positive semi-definite and their eigenvalues are real and non-neg
           \end{itemize}
 \end{itemize}
 
-\newpar{}
-\ptitle{Matrix Exponential Function}
-\begin{equation*}
-    e^{\mathbf{X}} = \sum_{k=0}^{\infty}\frac{1}{k!}\mathbf{X^k}
+\ptitle{\textbf{A} is symmetric}
+\noindent\begin{align*}
+    {\mathbf{A}}^\mathsf{T} & = \mathbf{A}   \\
+    {\mathbf{A}}^\mathsf{H} & = \mathbf{A}^*
+\end{align*}
+
+\ptitle{\textbf{A} is invertible}
+\noindent\begin{align*}
+    {(\mathbf{A}^\mathsf{T})}^{-1} & = {(\mathbf{A}^{-1})}^\mathsf{T} \\
+    {(\mathbf{A}^\mathsf{H})}^{-1} & = {(\mathbf{A}^{-1})}^\mathsf{H}
+\end{align*}
+
+\ptitle{\textbf{A} is square}
+\noindent\begin{align*}
+    \mathrm{eigvals}(\mathbf{A}^\mathsf{T}) & = \mathrm{eigvals}(\mathbf{A})        \\
+    \mathrm{eigvals}(\mathbf{A}^\mathsf{H}) & = \mathrm{eigvals}{(\mathbf{A})}^*    \\
+    \mathrm{eigvals}(\mathbf{A}^{-1})       & = \mathrm{eigvals}{(\mathbf{A})}^{-1}
+\end{align*}
+
+\ptitle{Blocks}
+\noindent\begin{equation*}
+    \begin{pmatrix}
+        A_{11} & \cdots & A_{1n} \\
+        \vdots &        & \vdots \\
+        A_{m1} & \cdots & A_{mn}
+    \end{pmatrix}^\mathsf{H}=
+    \begin{pmatrix}
+        A_{11}^\mathsf{H} & \cdots & A_{m1}^\mathsf{H} \\
+        \vdots            &        & \vdots            \\
+        A_{1n}^\mathsf{H} & \cdots & A_{nm}^\mathsf{H}
+    \end{pmatrix}
 \end{equation*}
