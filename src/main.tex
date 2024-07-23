@@ -1,0 +1,23 @@
+\input{var.tex}
+
+\documentclass[\fontheight]{extarticle}
+
+% load the template headers
+\input{\templatePath/summary_headers.tex} % ChkTex 27
+
+\begin{document}
+\begin{multicols*}{3}
+
+    % create the title section
+    \input{\templatePath/summary_title.tex} % ChkTex 27
+
+    \section{Matrices}
+    \subsection{Matrix Properties (matrices/properties.tex)}
+    \input{matrices/properties.tex}
+    \subsection{Matrix Algebra (matrices/algebra.tex)}
+    \input{matrices/algebra.tex}
+    \subsection{Specific Solutions (matrices/special\_solutions.tex)}
+    \input{matrices/special_solutions.tex}
+
+\end{multicols*}
+\end{document}

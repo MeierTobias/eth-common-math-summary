@@ -1,0 +1,26 @@
+\ptitle{Adjoint of a $3\times3$ matrix}
+\begin{small}
+    \noindent\begin{align*}
+        \mathrm{adj}(\mathbf{A}) & = \begin{bmatrix}
+                                         +\begin{vmatrix}a_{22}&a_{23}\\a_{32}&a_{33}\end{vmatrix} & -\begin{vmatrix}a_{12}&a_{13}\\a_{32}&a_{33}\end{vmatrix} & +\begin{vmatrix}a_{12}&a_{13}\\a_{22}&a_{23}\end{vmatrix} \\\\
+                                         -\begin{vmatrix}a_{21}&a_{23}\\a_{31}&a_{33}\end{vmatrix} & +\begin{vmatrix}a_{11}&a_{13}\\a_{31}&a_{33}\end{vmatrix} & -\begin{vmatrix}a_{11}&a_{13}\\a_{21}&a_{23}\end{vmatrix} \\\\
+                                         +\begin{vmatrix}a_{21}&a_{22}\\a_{31}&a_{32}\end{vmatrix} & -\begin{vmatrix}a_{11}&a_{12}\\a_{31}&a_{32}\end{vmatrix} & +\begin{vmatrix}a_{11}&a_{12}\\a_{21}&a_{22}\end{vmatrix}
+                                     \end{bmatrix} \\
+                                 & = \begin{bmatrix}
+                                         a_{22}a_{33}-a_{23}a_{32} & a_{13}a_{32}-a_{12}a_{33} & a_{12}a_{23}-a_{13}a_{22} \\
+                                         a_{23}a_{31}-a_{21}a_{33} & a_{11}a_{33}-a_{13}a_{31} & a_{13}a_{21}-a_{11}a_{23} \\
+                                         a_{21}a_{32}-a_{22}a_{31} & a_{12}a_{31}-a_{11}a_{32} & a_{11}a_{22}-a_{12}a_{21} \\
+                                     \end{bmatrix}
+    \end{align*}
+\end{small}
+
+\newpar{}
+\ptitle{Inversion of a $2\times2$ matrix}
+\begin{equation*}
+    \mathbf{A}^{-1} = \frac{\text{adj}(\mathbf{A})}{\text{det}(\mathbf{A})}
+    = \frac{1}{a_{11}a_{22} - a_{12}a_{21}}
+    \begin{bmatrix}
+        a_{22}  & - a_{12} \\
+        -a_{21} & a_{11}
+    \end{bmatrix}
+\end{equation*}
